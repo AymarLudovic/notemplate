@@ -1,58 +1,64 @@
 
 
-```javascript
+```jsx
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+  // Layout
   container: {
     flex: 1,
-    backgroundColor: '#ffffff',
-    padding: 16,
+    backgroundColor: '#f5f5f5',
   },
-  header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: 16,
-  },
-  searchInput: {
-    flex: 1,
-    marginRight: 16,
-    borderWidth: 1,
-    borderColor: '#cccccc',
+  searchContainer: {
+    marginHorizontal: 16,
+    marginVertical: 10,
     borderRadius: 8,
-    padding: 12,
+    backgroundColor: '#ffffff',
+    flexDirection: 'row',
+    alignItems: 'center',
   },
-  button: {
-    backgroundColor: '#007bff',
-    width: 56,
-    height: 56,
-    borderRadius: 28,
+  inputContainer: {
+    flex: 1,
+    marginRight: 10,
+  },
+  buttonContainer: {
+    width: 50,
     justifyContent: 'center',
     alignItems: 'center',
   },
-  buttonText: {
-    color: '#ffffff',
-    fontWeight: 'bold',
-    fontSize: 16,
-  },
-  searchResults: {
+
+  // Colors
+  input: {
     flex: 1,
-  },
-  resultItem: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: 16,
-  },
-  resultTitle: {
-    fontWeight: 'bold',
+    height: 40,
+    paddingHorizontal: 10,
+    color: '#000000',
     fontSize: 16,
   },
-  resultDescription: {
-    color: '#999999',
-    fontSize: 14,
+  button: {
+    width: 50,
+    height: 40,
+    borderRadius: 8,
+    backgroundColor: '#007bff',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
+
+  // Typography
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#000000',
+    marginBottom: 10,
+  },
+  text: {
+    fontSize: 16,
+    color: '#000000',
+  },
+
+  // Spacing
+  marginHorizontal: 16,
+  marginVertical: 10,
 });
 
 export default styles;
