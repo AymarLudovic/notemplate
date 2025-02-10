@@ -1,72 +1,46 @@
 
 
 ```javascript
-import { StyleSheet, Dimensions } from 'react-native';
+import { StyleSheet } from 'react-native';
 
-const { width, height } = Dimensions.get('window');
-
-const styles = StyleSheet.create({
+export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#F5F5F5',
   },
-  profileImage: {
-    width: width * 0.3,
-    height: width * 0.3,
-    borderRadius: width * 0.3 / 2,
-    alignSelf: 'center',
-    marginTop: height * 0.1,
-  },
-  profileInfo: {
-    marginTop: height * 0.05,
+  header: {
+    height: 200,
+    backgroundColor: '#333',
+    justifyContent: 'center',
     alignItems: 'center',
   },
-  profileName: {
+  profilePicture: {
+    width: 100,
+    height: 100,
+    borderRadius: 50,
+  },
+  name: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#000',
+    color: '#FFF',
   },
-  profileUsername: {
+  bio: {
     fontSize: 16,
-    color: '#666',
+    color: '#FFF',
   },
-  profileBio: {
-    marginTop: height * 0.02,
-    fontSize: 14,
-    color: '#444',
-    textAlign: 'center',
-    width: width * 0.8,
+  body: {
+    flex: 1,
+    padding: 20,
   },
-  profileStats: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    marginTop: height * 0.05,
-  },
-  profileStat: {
-    alignItems: 'center',
-  },
-  profileStatNumber: {
+  sectionTitle: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#000',
+    marginBottom: 10,
   },
-  profileStatLabel: {
-    fontSize: 12,
-    color: '#666',
-  },
-  profileEditButton: {
-    marginTop: height * 0.05,
-    alignSelf: 'center',
-    backgroundColor: '#000',
-    padding: 10,
-    borderRadius: 5,
-  },
-  profileEditButtonText: {
-    color: '#fff',
+  sectionItem: {
     fontSize: 16,
+    marginBottom: 5,
   },
 });
-
-export default styles;
 ```
 
