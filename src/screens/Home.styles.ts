@@ -1,70 +1,44 @@
 
 
-```jsx  
+```javascript
 import { StyleSheet } from 'react-native';
+import { colors, typography, spacing } from '../../theme';
 
 const styles = StyleSheet.create({
-  // Main Container
   container: {
     flex: 1,
-    backgroundColor: '#f9f9f9',
+    backgroundColor: colors.background,
   },
-
-  // Header
   header: {
-    height: 60,
     flexDirection: 'row',
-    alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 20,
-    backgroundColor: '#fff',
+    alignItems: 'center',
+    padding: spacing.large,
   },
-
-  // Body
+  title: {
+    ...typography.title,
+    color: colors.text,
+  },
+  subtitle: {
+    ...typography.subtitle,
+    color: colors.text,
+  },
   body: {
     flex: 1,
-    padding: 20,
+    padding: spacing.large,
   },
-
-  // Title
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#333',
+  content: {
+    flex: 1,
+    justifyContent: 'space-between',
   },
-
-  // SubTitle
-  subTitle: {
-    fontSize: 16,
-    fontWeight: '400',
-    color: '#666',
-  },
-
-  // Button
-  button: {
-    width: '100%',
-    height: 50,
-    backgroundColor: '#0099FF',
-    borderRadius: 5,
-    justifyContent: 'center',
+  footer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     alignItems: 'center',
+    padding: spacing.large,
   },
+});
 
-  // Button Text
-  buttonText: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    color: '#fff',
-  },
-
-  // Spacing
-  marginTop20: {
-    marginTop: 20,
-  },
-
-  marginRight10: {
-    marginRight: 10,
-  },
-});  
+export default styles;
 ```
 
